@@ -1,0 +1,79 @@
+* {
+    color: #002333;
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.cabecalho img {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 20rem;
+}
+
+main {
+    width: 50%;
+    padding: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+}
+
+.texto {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caixa-texto {
+    padding: 2rem;
+    width: 50%;
+}
+
+.entrada-texto {
+    text-decoration: none;
+    border: 0;
+    width: 500px;
+}
+
+.caixa-texto textarea {
+    width: 30rem;
+    height: 10rem;
+    border: none;
+}
+
+.botao {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.botao button {
+    cursor: pointer;
+    padding: 1.5rem;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.5rem;
+    background-color: #B4BEC9;
+}
+
+.resolucao-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10%;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 1px #3A3D41;
+    background-color: #B4BEC9;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+p {
+    padding: 1rem;
+}
