@@ -1,3 +1,4 @@
+let textinput = document.getElementById('copiartexto');
 
 function criptografar() {
 
@@ -22,7 +23,7 @@ function criptografar() {
     let hexadecimal = stringParaHexa(entradaTexto);
 
     exibirTextoNaTela('h1', 'TEXTO CRIPTOGRAFADO COM SUCESSO');
-    exibirTextoNaTela('p', hexadecimal);
+    textinput.innerHTML = hexadecimal;
 }
 
 
@@ -34,7 +35,7 @@ function descriptografar() {
 
     function hexaParaString(hexa) {
         let str = '';
-        for (let i = 0; i < hex.length; i += 2) {
+        for (let i = 0; i < hexa.length; i += 2) {
             let charCode = parseInt(hexa.substr(i, 2), 16);
             str += String.fromCharCode(charCode);
         }
@@ -47,5 +48,9 @@ function descriptografar() {
     let descriptografado = hexaParaString(entradaTexto);
 
     exibirTextoNaTela('h1', 'TEXTO CRIPTOGRAFADO COM SUCESSO');
-    exibirTextoNaTela('p', descriptografado);
+    textinput.innerHTML = descriptografado;
+}
+
+function copiar() {
+    navigator.clipboard.writeText(textinput.value);
 }
