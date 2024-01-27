@@ -18,7 +18,7 @@
     <main>
         <div class="texto">
             <div class="caixa-texto">
-                <textarea name="" id="mensagem" cols="30" rows="10" placeholder="Digite aqui"></textarea>
+                <textarea name="" id="mensagem" cols="50" rows="10" placeholder="Digite aqui"></textarea>
             </div>
             <div class="botao">
                 <button type="button" onclick="criptografar()">Criptografar</button>
@@ -26,11 +26,27 @@
             </div>
         </div>
 
-        <div class="resolucao-texto">
-            <h1></h1>
-            <p></p>
+        <div class="resolucao">
+            <div class="resolucao-texto">
+                <h1>Challeng Decodificador de Textos</h1>
+                <textarea name="" id="copiartexto" cols="30" rows="10"></textarea>
+            </div>
+            <button type="button" onclick="copiar()">Copiar</button>
         </div>
+
     </main>
+
+    <footer class="rodape">
+
+        Desenvolvido por Vítor 
+        <a href="https://github.com/euvitorti" class="acessar-link">
+            <img src="img/github.png" alt="" width="25px" height="25px">
+        </a>
+
+        <a href="https://www.linkedin.com/in/joaolima23" class="acessar-link">
+            <img src="img/linkedin.png" alt="" width="25px" height="25px">
+        </a>
+    </footer>
 
     <script src="script.js"></script>
 </body>
